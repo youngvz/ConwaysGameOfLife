@@ -90,10 +90,39 @@ game.canvas.addEventListener('click', function(evt){
    grid.getCell(gridx, gridy).isAlive = true;
 });
 
-window.addEventListener('keydown', function(){
-   grid.simulationOn = !grid.simulationOn;
-});
-
 game.actors.push(grid);
 
 game.start();
+
+// Toggles the game on and off when button is clicked
+
+function startGame(){
+    grid.simulationOn = !grid.simulationOn;
+}
+
+
+// Toggles the game for 23 generations
+
+function toggleGame(){
+    grid.simulationOn = !grid.simulationOn;
+    setTimeout(function(){ 
+
+    grid.simulationOn = !grid.simulationOn;
+    }, 2300); 
+}
+
+// Toggles the game for 1 generation
+
+function toggleGameByOne(){
+    grid.simulationOn = !grid.simulationOn;
+    setTimeout(function(){ 
+
+    grid.simulationOn = !grid.simulationOn;
+    }, 100); 
+}
+
+// Resets the game by reloading the screen
+
+function resetGame(){
+    location.reload();
+}
