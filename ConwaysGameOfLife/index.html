@@ -7,9 +7,11 @@
 <body>
    <canvas id="game" width="800" height="600"></canvas>
     <div id = "buttonContainer" width="800" height="600">
-        <button type="button"  width="100" height="50">Start Game!</button>
-        <button type="button"  width="100" height="50">Increment Game!</button>
-        <button type="button"  width="100" height="50">Run Game!</button>
+        <button type="button"  width="100" height="50" onclick="startGame()">Start Game!</button>
+        <button type="button"  width="100" height="50" onclick="startGame()">Stop Game!</button>
+        <button type="button"  width="100" height="50" onclick="toggleGameByOne()" >Increment Game!</button>
+        <button type="button"  width="100" height="50" onclick="toggleGame()" >Run Game!</button>
+        <button type="button"  width="100" height="50" onclick="resetGame()">Reset Game!</button>
     </div>
     
     
